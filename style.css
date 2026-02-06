@@ -217,3 +217,86 @@ section h2 {
 .btn-cert:hover {
   background-color: #16a085;
 }
+/* ======== PROYECTOS ======== */
+#proyectos {
+  padding: 40px 20px;
+}
+
+/* Grid responsiva */
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 20px;
+}
+
+/* Tarjeta */
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Imagen */
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Botones del proyecto */
+.project-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Botón estilo adaptado a tu identidad visual */
+.btn-primary,
+.btn-secondary,
+.btn-disabled {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background .3s ease, transform .2s ease;
+}
+
+/* Botón principal (tu verde corporativo) */
+.btn-primary {
+  background: #1abc9c;
+  color: white;
+}
+.btn-primary:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* Botón secundario (tu gris oscuro del header/nav) */
+.btn-secondary {
+  background: #34495e;
+  color: white;
+}
+.btn-secondary:hover {
+  background: #2c3e50;
+  transform: translateY(-2px);
+}
+
+/* "Deshabilitado" */
+.btn-disabled {
+  background: #bdc3c7;
+  color: #fff;
+  pointer-events: none;
+  cursor: not-allowed;
+}
